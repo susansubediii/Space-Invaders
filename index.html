@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div>
+        <p>
+            <span>Score:</span> <span id="scoreEl">0</span>
+        </p>
+        <canvas></canvas>
+    </div>
+
+    <div class="screen">
+        <h5 id="message" class="message">
+            Game Over ! <br>
+            <button class="button-27" onclick="restart()">Restart</button>
+        </h5>
+    </div>
+    <audio id="shoot" controls style="display:none">
+        <source src="./sounds/shoot.wav" type="audio/mpeg">
+    </audio>
+    <audio id="lose" controls style="display:none">
+        <source src="./sounds/explosion.wav" type="audio/mpeg">
+    </audio>
+    <audio id="point" controls style="display:none">
+        <source src="./sounds/invaderkilled.wav" type="audio/mpeg">
+    </audio>
+    <script src="index.js"></script>
+</body>
+
+</html>
